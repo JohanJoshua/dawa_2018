@@ -1,0 +1,5 @@
+_Recordamos conceptos básicos de nodejs como levantar un servidor o enviar respuestas al puerto en el que estamos conectándonos.
+_Analizamos la velocidad con la que se ejecuto un bucle while true dentro de una pagina para asi poder comprobar que esta no tenia ningún problema mientras imprimia los números comprobando asi su alta velocidad.
+_Utilizamos apache para crear archivos php y ejecutar pequeños formularios en los cuales ejecutamos sumas simples con datos enteros.
+_Verificamos errores que se sucitaban cuando en el formulario de suma se ingresaba un valor numerico decimal arreglando este pequeño problema con un simple parseFloat en ves de un parseInt.
+_Creamos una pagina web simple con 5 paginas las cuales enrutamos mediante una sentencia if comparando en este caso el url que teniamos en ese momento para asi mostrar una pagina en cada caso.

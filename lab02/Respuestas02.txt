@@ -1,0 +1,9 @@
+Informe Lab02
+2.3 El error que nos salta es que no existe la variables arreglo_parametros asi que procedemos a crear dicha variable y ahora se ejecuta el html de forma normal (imagen 01).
+2.5 Los valores de las variables son:
+arreglo_parametros:['nombre=Mario']
+parametros:['nombre']
+valores['Mario']
+(Ver imagen02)
+2.6 Lo que se ha realizado aqui es almacenar los valores pasados por la url dentro de un arreglo separandolo en parametros valores y todo el comando en general con el objeto request tambien se puede hacer redireccionamiento utilizando switch o if's ya que podemos obtener la url del lugar en donde estamos y dentro del codigo html las redirecciones solo cambian la url que le damos con el atributo href.
+3.4 Poniendo condicionantes para verificar si es que se esta enviando una variable real o si se esta tratando de inyectar codigo.

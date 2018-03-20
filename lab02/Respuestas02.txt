@@ -7,3 +7,9 @@ valores['Mario']
 (Ver imagen02)
 2.6 Lo que se ha realizado aqui es almacenar los valores pasados por la url dentro de un arreglo separandolo en parametros valores y todo el comando en general con el objeto request tambien se puede hacer redireccionamiento utilizando switch o if's ya que podemos obtener la url del lugar en donde estamos y dentro del codigo html las redirecciones solo cambian la url que le damos con el atributo href.
 3.4 Poniendo condicionantes para verificar si es que se esta enviando una variable real o si se esta tratando de inyectar codigo.
+3.8 Podemos guardar datos del navegador del usuario para hacer que se reconosca cuando ya ha ingresado anteriormente para recomendar logearse o cosas por el estilo. 
+4.1 y 4.2 (imagen 04 y revisar archivo fecha.js)
+4.3 (archivo enrutador.js)
+5.3 Haciendo uso del REPL podemos crear cualquier funcion y luego utilizarla al instante incluso se puede cargar funciones asi que basicamente es una consola de uso rapido(imagen 05)
+5.4 (imagen 06)
+5.7 (imagen 07)

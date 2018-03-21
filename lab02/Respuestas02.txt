@@ -13,3 +13,15 @@ valores['Mario']
 5.3 Haciendo uso del REPL podemos crear cualquier funcion y luego utilizarla al instante incluso se puede cargar funciones asi que basicamente es una consola de uso rapido(imagen 05)
 5.4 (imagen 06)
 5.7 (imagen 07)
+Tarea
+1.
+	a. (imagen 09)
+	b. (imagen 08)
+3. node inspector es una herramienta que nos proporciona node para poder hacer debuggig de nuestro codigo con una interfaz que nos permite ejecutar el codigo linea por linea.  (imagen 10)
+
+OBSERVACIONES Y CONCLUSIONES
+_Aprendimos a utilizar modulos en node instanciando las funciones creadas creadas en dicho modulo para poder usarlas en cualquier parte de nuestro servidor.
+_Utilizamos funciones de reemplazo transformando primero el html a un string para asi poder modificar valores que hayamos escrito en este de manera sencilla.
+_Utilizamos la url para pasar valores hacia nuestro servidor ya que de este modo pudimos manejarlos haciendo uso de nuestro modulo de parseo.
+_Creamos dos pequeños programas utilizando una interfaz grafica para poder almacenar la data enviada mediante el uso de querystring.
+_Instalamos la herramienta node inspector para poder probarlo mediante un archivo de prueba comprobando que esta herramienta te redirecciona hacia una pagina que nos muestra un debugger con una interfaz grafica a nuestra disposicion para ejecutar el codigo paso a paso.

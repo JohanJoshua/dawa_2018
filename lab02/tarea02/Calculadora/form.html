@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculadora</title>
+</head>
+<body>
+<form method="POST">
+	<h1>Calculadora</h1>
+	<label>Ingrese Primer Numero</label>
+	<input type="text" name="x"></br>
+	<label>Ingrese Segundo Numero</label>
+	<input type="text" name="y"></br>
+	<label>Seleccione la operacion</label>
+	<select name="operacion">
+		<option value="suma" selected>Suma</option>
+		<option value="resta">Resta</option>
+		<option value="multiplicacion">Multiplicacion</option>
+		<option value="division">Division</option>
+	</select></br>
+	<input type="submit" value="Calcular">
+</form>
+
+<h1>Resultado de la operacion</h1>
+	<span>Operacion: {operacion}</span></br>
+	<span>Primer Numero: {x}</span></br>
+	<span>Segundo Numero: {y}</span></br>
+	<span>Resultado: {resultado}</span>
+</body>
+</html>

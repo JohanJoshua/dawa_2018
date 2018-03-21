@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Procesador de Texto</title>
+</head>
+<body>
+	<h1>Procesador de Texto</h1>
+	<form method="POST">
+		<label>Ingrese el texto que desea procesar</label></br>
+		<textarea name="texto" rows="10" cols="50"></textarea></br>
+		<label>Seleccione la accion a ejecutar</label></br>
+		<select name="accion">
+			<option value="dividir" selected>Dividir palabras</option>
+			<option value="eliminar">Eliminar espacios</option>
+			<option value="capitalizar">Capitalizar</option>
+			<option value="minusculas">Minusculas</option>
+			<option value="mayusculas">Mayusculas</option>
+			<option value="contar">Contar caracteres</option>
+		</select></br>
+		<input type="submit" value="Enviar">
+	</form>
+	<h1>Resultado</h1>
+	<span>Accion ejecutada: {accion}</span></br>
+	<span>Antes: {texto}</span></br>
+	<span>Despues: {resultado}</span>
+</body>
+</html>

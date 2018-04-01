@@ -1,3 +1,5 @@
+3.4Descripcion de cada punto en la creacion de un proyecto con npm
+
 El primer punto es colocar un nombre a nuestro proyecto esta es una de las cosas mas importantes para inicializar nuestro proyecto (ver imagen 01)
 El segundo punto es la version de nuestro proyecto la cual es la segunda cosa mas importante de nuestro proyecto debido a que el nombre y la version se tomaran como un identificador que no se repitira asimismo el avance del proyecto va de la mano con el avence de las versiones(ver imagen 01)
 El tercer punto es la descripcion de nuestro proyecto la cual ayuda a entender mejor para que sirve(ver imagen 01)
@@ -7,3 +9,92 @@ El sexto punto es el git repository es el cual nos deja colocar la ubicacion del
 El septimo punto son las keywords las cuales estan guardadas dentro de un array el cual servira para hacer que las demas personas puedan encontrar facilmente nuestro proyecto(ver imagen 01)
 El octavo punto es el author en el cual podemos colocar el nombre del creator del proyecto(ver imagen 01)
 El noveno punto es la license en la cual podemos especificar basicamente que licensia estamos usando lo cual testifica para que puede ser utilizado nuestro proyecto(ver imagen 01)
+4.2
+Se han instalado varios archivos dentro de una carpeta underscore el cual es un cinturon de herramientas para javascript ya que nos ayuda con las funciones mas usadas dentro de este
+(ver imagen 02) 
+
+4.4
+Lo que ha cambiado en esta parte es que hemos hecho que el modulo underscore se utilizado dentro de nuestro proyecto muy aparte de haberlo instalado(ver imagen 03)
+
+4.7
+Lo que esta sucediendo aqui es que estamos usando una funcion de underscore la cual nos ayuda a pasar una funcion a cada elemento de un array por lo que se imprimen los 6 numeros que contiene nuestro array(ver imagen 04)
+
+4.12
+Lo que esta haciendo esta funcion es concatenar varias funciones a la ves lo que nos ermite como en este caso primero aplicar un filtro en el cual solo se esta eligiendo aquellos datos que tengan como designacion SSE luego se hace un mapeo de los datos para solo obtener el nombre y el id en ese orden y finalmente le devolvemos este valor a la variable de empleados_sse para poder imprimirlo(ver imagen 05)
+
+5.5
+Podemos utilizar mas idiomas para hacer mas funcional el codigo asi como tambien podriamos poner una interfaz grafica para elegir el idioma al cual queremos cambiar la frase que hemos ingresado(ver iamgen 06)
+
+6.9
+var _ = require('miranda-urday-johan-joshua');
+var palabra = "%Hola%";
+var reemplazos = {
+	"en":{
+		"Hola":"Hello"
+	}
+}
+var res = _.replace("%Hola%",reemplazos["en"]);
+console.log(res);
+(ver imagen 07)
+
+7.1
+El codigo crea una variable nodes la cual va a obtener el elemento que tenga id button luego esta variable sera usada dentro de un for en el cual le añadiremos un evento que se ejecutara cada ves que se le haga click al elemento button haciendo que en cada click se imprima un mensaje del numero de veces que se ha clickeado el boton.
+
+7.2
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Example</title>
+	<script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+</head>
+<body>
+	<button id="button">Click me</button>
+	<p id="target"></p>
+	<script>
+		$(document).ready(function(){
+			var c=0;
+		    $("#button").click(function(){
+		    	c++;
+		    	$("#target").text(c);
+		    });
+		});
+	</script>
+</body>
+</html>
+(ver imagen 08)
+
+7.3
+El codigo mostrado en teoria deberia imprimir primero el numero 1 luego deberia esperar un segudo para imprimir el numero 2 y luego esperaria 0 segundos para imprimir el numero 3 para finalmente imprimir el numero 4 pero como nodejs es asincrono esto no se ejecuta de esta forma por lo que se imprimiran primero los numeros 1 y 4 para luego imprimirse el 3 y el 2 (ver imagen 09)
+
+7.4
+Esta forma de expresar el if es bastante elegante por lo que simplemente depende de nuestro criterio el usarla o no ya que nos ahorra unas lineas de codigo y logra verse mas profesional.
+
+7.10
+La herencia parasitaria permite agregar atributos a partir de otro objeto insertado dentro de la funcion principal de ahi su nombre de funcion parasitaria este comportamiento nos ayuda a integrar parametros por partes para tener distintos objetos con atributos en comun pero que no siempre se van a repetir(ver imagen 10)
+
+8.2
+(ver imagen 11)
+
+8.3
+(ver imagen 12)
+
+8.4
+(ver imagen 13)
+
+8.5
+(revisar archivo examples\tocado.js)
+(ver imagen 14)
+
+8.6
+(ver imagen 15)
+
+8.7
+(ver imagen 16)
+
+Conclusiones
+_Aprendimos a utilizar NPM para instalar paquetes asi como tambien lo utilizamos para exportar nuestros propios paquetes creandonos primero una cuenta en la pagina de npm, utilizando luego nuestro paquete exportado para verificar la funcionalidad del mismo.
+_Inspeccionamos codigo javascript otorgado por el docente para deducir los resultados que estas funciones pudieran darnos mejorando asi nuestra capacidades de entendimiento en este lenguaje de programacion.
+_Vimos como se pueden optimizar algunas estructuras que conociamos desde hace mucho pero que hasta ahora no habiamos modificado como es el caso del if, el cual se abrevio bastante con la implementacion de una simple condicional antes de agregar el valor otorgado a una variable.
+_Entendimos el uso de closure en javascript viendo algunos ejemplos dados en el laboratorio asi como tambien implementandolo dentro de algunos ejercicios propuestos por el mismo.
+_Resolvimos problemas dados por el laboratorio en donde se extraia un fragmento de codigo para lo cual nosotros debiamos deducir que poner en dicho lugar para que el codigo se ejecutara con exito.
+_Implementamos la funcion QuickSort en javascript utilizando conceptos de recursividad dentro del codigo creado y dando un arreglo aleatorio en cada ejecucion de dicha funcion para probar la funcionalidad de este codigo.

@@ -1,0 +1,12 @@
+2.13
+Se busca diferenciar la acción que se esta ejecutando aunque se este ingresando a la misma URL puede que algunos usuarios esten ingresando jalando datos desde paginas anteriores o puede que se esten insertando datos o borrando los mismos.
+
+2.18
+(ver imagen 01,02,03,04)
+
+2.21
+(ver imagen 05,06,07)
+
+2.24
+(ver imagen 08,09,10)
+

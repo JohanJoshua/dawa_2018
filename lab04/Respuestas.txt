@@ -1,3 +1,5 @@
+Respuestas
+
 2.13
 Se busca diferenciar la acción que se esta ejecutando aunque se este ingresando a la misma URL puede que algunos usuarios esten ingresando jalando datos desde paginas anteriores o puede que se esten insertando datos o borrando los mismos.
 
@@ -9,4 +11,12 @@ Se busca diferenciar la acción que se esta ejecutando aunque se este ingresando 
 
 2.24
 (ver imagen 08,09,10)
+
+Conclusiones
+
+_Instalamos express utilizando npm y comprobando que ha añadido a nuestro proyecto mediante la revision del archivo package.json el cual contiene todos sus detalles.
+_Requerimos express dentro de un archivo server.js para iniciar una conexion en el puerto 3000 comprobando las diferencias entre hacer una conexion con express y hacer una conexion sin express.
+_Descargamos la herramienta POSTman la cual nos ayudo a mandar request a nuestra pagina de tipo post get y delete para comprobar la funcionalidad de estos metodos de envio de datos.
+_Utilizamos la funcion use de express para mandar un response en caso de que la respuesta del navegador sea un codigo 404 o 500, de este modo podemos controlar errores con mayor facilidad.
+_Creamos una landing page para nuestro proyecto haciendo uso de los conocimientos previos aprendidos en el tercer semestre sobre html y css pero esta ves utilizando express y node para la conexion con algun puerto. 
 

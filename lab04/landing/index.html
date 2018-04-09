@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css/w3.css">
+<link rel="stylesheet" type="text/css" href="css/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Karma", sans-serif}
+.w3-bar-block .w3-bar-item {padding:20px}
+</style>
+<body>
+
+<!-- Sidebar (hidden by default) -->
+<nav class="w3-sidebar w3-bar-block w3-card w3-top w3-xlarge w3-animate-left" style="display:none;z-index:2;width:40%;min-width:300px" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()"
+  class="w3-bar-item w3-button">Cerrar</a>
+  <a href="#anuncios" onclick="w3_close()" class="w3-bar-item w3-button">Anuncios</a>
+  <a href="#nosotros" onclick="w3_close()" class="w3-bar-item w3-button">Nosotros</a>
+  <a href="#categorias" onclick="w3_close()" class="w3-bar-item w3-button">Categorias</a>
+</nav>
+
+<!-- Top menu -->
+<div class="w3-top">
+  <div class="w3-white w3-xlarge" style="max-width:1200px;margin:auto">
+    <div class="w3-button w3-padding-16 w3-left" onclick="w3_open()">☰</div>
+    <div class="w3-right w3-padding-16"><a href="#" class="w3-btn">Vender</a></div>
+    <div class="w3-center w3-padding-16">Baches y Cachibaches</div>
+  </div>
+</div>
+  
+<!-- !PAGE CONTENT! -->
+<div class="w3-main w3-content w3-padding" style="max-width:1200px;margin-top:100px">
+
+  <!-- First Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center" id="anuncios">
+    <div class="w3-quarter">
+        <div class="container">
+        <img src="img/cachorro.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Johan
+                            Puntaje: 100 pts</div>
+        </div>
+        </div>
+      <h3>Vendo Hermoso Pastor Aleman Cachorro</h3>
+      <p>Es muy educado y tiene todas sus vacunas al dia, si estas interesado contactame.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.150</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 991435678</span> 
+    </div>
+    
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/reloj.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Juan
+                            Puntaje: 90 pts</div>
+        </div>
+        </div>
+      <h3>Vendo Reloj Michael Kors</h3>
+      <p>El reloj esta en muy buen estado si lo deseas comunicate conmigo.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.200</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 994535623</span> 
+    </div>
+    <div class="w3-quarter">
+        <div class="container">
+        <img src="img/play4.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Bryan
+                            Puntaje: 70 pts</div>
+        </div>
+        </div>
+      <h3>Play 4 en muy buen estado</h3>
+      <p>Lo vendo junto con el mando que se ve en la imagen y 3 juegos mas.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.800</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 917628394</span> 
+    </div>
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/peluche.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Renzo
+                            Puntaje: -10 pts</div>
+        </div>
+        </div>
+      <h3>Vendo Oso de Peluche Gigante</h3>
+      <p>Esta en perfecto estado y es mas grande de lo que se ve en la foto.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.160</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 998765849</span> 
+    </div>
+  </div>
+  
+  <!-- Second Photo Grid-->
+  <div class="w3-row-padding w3-padding-16 w3-center">
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/bolso.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Daniela
+                            Puntaje: 60 pts</div>
+        </div>
+        </div>
+      <h3>Vendo Bolso Reebok</h3>
+      <p>El bolso esta casi nuevo y lo dejo casi a mitad de su precio real, aprovecha esta oferta.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.300</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 965748392</span> 
+    </div>
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/celular.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Alberto
+                            Puntaje: 85 pts</div>
+        </div>
+        </div>
+      <h3>Xperia M4 Aqua 5, 16GB</h3>
+      <p>Esta muy bien cuidado y se vende con la memoria SD.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.700</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 976239405</span> 
+    </div>
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/guitarra.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Gabtim
+                            Puntaje: 95 pts</div>
+        </div>
+        </div>
+      <h3>Vendo Guitarra Acustica</h3>
+      <p>No la he usado mucho por lo que no tiene ningun rasguño ni mancha, si estas interesado llamame.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.160</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 965473892</span> 
+    </div>
+    <div class="w3-quarter">
+      <div class="container">
+        <img src="img/sofa.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Usuario: Ronaldo
+                            Puntaje: 150 pts</div>
+        </div>
+        </div>
+      <h3>Sofa 8/10 bien cuidado</h3>
+      <p>Tiene un año de uso y lo vendo porque me mudare, si te interesa mandame un mensaje.</p>
+      <span class="w3-tag w3-black w3-margin-bottom">S/.1400</span>  <span class="w3-tag w3-black w3-margin-bottom">Telefono: 976584739</span> 
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
+  
+  <hr id="nosotros">
+
+  <!-- About Section -->
+  <div class="w3-container w3-padding-32 w3-center">  
+    <h3>Sobre Nosotros</h3><br>
+    <img src="img/ventas.jpeg" alt="carrito" class="w3-image" style="display:block;margin:auto" width="800" height="533">
+    <div class="w3-padding-32">
+      <h4><b>¿Necesitas Vender Algo?</b></h4>
+      <h6><i>Nuesta pagina tiene todas las herramientas</i></h6>
+      <p>Esta pagina esta diseñada para que puedas vender cualquier cosa que necesites, teniendo un sistema de puntos que se mostrara como tu reputacion ante los demas, asi que cuando tu quieras comprar algo puedes guiarte por la reputacion de los demas usuarios, por si no te fias mucho de las ventas online.</p>
+    </div>
+  </div>
+  <hr id="categorias">
+  <div class="w3-row-padding">
+    <div class="example">
+        <div class="container">
+        <img src="img/pets.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Mascotas</div>
+        </div>
+        </div>
+        <div class="container">
+        <img src="img/electrodomesticos.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Electrodomesticos</div>
+        </div>
+        </div>
+    </div>
+    <div class="example">
+      <div class="container">
+        <img src="img/tecnologia.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Tecnologia</div>
+        </div>
+        </div>
+      <div class="container">
+        <img src="img/viviendas.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Inmuebles</div>
+        </div>
+        </div>
+    </div>
+    <div class="example">
+      <div class="container">
+        <img src="img/muebles.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Hogar</div>
+        </div>
+        </div>
+        <div class="container">
+        <img src="img/vehiculos.jpg" alt="Avatar" class="image">
+        <div class="overlay">
+          <div class="text">Vehiculos</div>
+        </div>
+        </div>
+    </div>
+  </div>
+  <hr>
+
+
+  <!-- Footer -->
+  <footer class="w3-row-padding w3-padding-32">
+    <div class="w3-third">
+      <h3>Noticias</h3>
+      <p>Muy pronto podras descargar nuestra app totalmente gratis :).</p>
+      <p>Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </div>
+  
+    <div class="w3-third">
+      <h3>Ultima actualizacion</h3>
+      <ul class="w3-ul w3-hoverable">
+        <li class="w3-padding-16">
+          <img src="" class="w3-left w3-margin-right" style="width:50px">
+          <span class="w3-large">Fecha: 08/04/2018</span>
+        </li> 
+      </ul>
+    </div>
+
+    <div class="w3-third w3-serif">
+      <h3>Busquedas Populares</h3>
+      <p>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cachorros</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Gatitos</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Autos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Sofas</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Departamentos</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Celulares</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Economicos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Gratis</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Relojes</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Juegos</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Cocinas</span>
+        <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Televisores</span> <span class="w3-tag w3-dark-grey w3-small w3-margin-bottom">Motos</span>
+      </p>
+    </div>
+  </footer>
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+}
+</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+Respuestas
+
+3.5.
+En la linea app.get('/producto', producto.show); estamos mostrando todo lo que hay dentro de producto.
+En la linea app.post('/producto', producto.create); estamos creando un producto.
+En la linea app.post('/producto/update', producto.update); estamos actualizando un producto.
+En la linea app.post('/producto/delete', producto.delete); estamos eliminando un producto.
+
+3.9.
+(ver imagen 01)
+3.10
+(ver imagenes 02,03,04,05,06)
+3.15
+(ver imagen 07)
+3.18
+(ver imagen 08)

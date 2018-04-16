@@ -1,0 +1,36 @@
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Sistema
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+		
+	body
+		block content
+			.main.container
+				.row
+					.col-md-6.col-md-offset-3
+						h1.display-4.m-b-2 Editar Categoria
+						form(method='POST' action='/editCategory')
+							input(type='hidden' name='_id' value=data._id)
+							input(type='hidden' name='count' value=data.subcategorias.length)
+							div.form-group
+								label(for='nombre') Nombre:
+								input.form-control(type='text' name='nombre' value=data.nombre)
+							div.form-group
+								div
+									label(for='nombre') Subcategorias:                  
+									p.btn.btn-primary#addSub Añadir mas subcategorias
+								for item in data.subcategorias
+									input(type='hidden' name='sub_id' value=item._id)
+									input.form-control(type='text' name='subcategorias' value=item.nombre)
+								div#labelSub
+							button.btn.btn-primary(type='submit') Grabar
+							button.btn.btn-basic
+								a(href="/category") Regresar
+			script(src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js")
+			script.
+				$(document).ready(()=>{
+					$('#addSub').click(()=>{
+						$('#labelSub').append("<input class='form-control' type='text' name='newSubcategorias'/>");
+					});
+				});

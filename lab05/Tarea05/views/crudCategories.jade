@@ -11,25 +11,27 @@ html
 						table.table.table-dark(border=1)
 							thead.thead-dark
 								tr
-									th
-										a(href="/producto/crear") Crear Producto
+									th(colspan=4)
+										h1.display-4.m-b-2 CRUD de Categorias 
+										a(href="/createCategory") Crear Categoria
 								tr
 									th ID
 									th Nombre
-									th Descripcion
-									th Precio
-									th Accion
+									th Subcategorias
 							tbody
 								for item in data
 									tr
 										td= item._id
 										td= item.nombre
-										td= item.descripcion
-										td= item.precio
-										td(width=200)
-											form(method='POST' action='/producto/editar')
+										td
+											ul
+												each i in item.subcategorias
+													li= i.nombre			
+													
+										td
+											form(method='POST' action='/editViewCategory')
 												input(type='hidden' name='_id' value=item._id)
 												input(type='submit' value='Editar') 
-											form(method='POST' action='/producto/delete')
+											form(method='POST' action='/deleteCategory')
 												input(type='hidden' name='_id' value=item._id)
 												input(type='submit' value='Borrar')

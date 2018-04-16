@@ -14,3 +14,17 @@ En la linea app.post('/producto/delete', producto.delete); estamos eliminando un
 (ver imagen 07)
 3.18
 (ver imagen 08)
+3.19
+(revisar archivo user.js)
+3.20
+(ver imagen 09)
+Tarea
+(ver imagenes 10,11 y 12)
+
+Conclusiones
+_Utilizamos mongoose para poder realizar las funciones basicas de un CRUD asi como tambien instalamos jade para tener un html mas accesible a la vista ya que este no utiliza el formate de etiquetado que normalmente se usa.
+_Creamos esquemas refiriendonos a las tablas previamente creadas en mongo, de este modo podemos manejar los campos que estaran insertados dentro de nuestro esquema que vendria a ser como el esqueleto de nuestra tabla.
+_Aprendimos a enviar datos entre vistas haciendo uso de la funcion res.render con la cual ademas de cargar una vista se puede enviar un JSON para poder manejar datos que se hayan consultado en el archivo donde se ejecuta nuestro mongoose.
+_Utilizamos bootstrap para dar estilos a nuestra pagina asi como tambien usamos jquery para poder manejar elementos del DOM y asi pudimos ejecutar inserciones de datos mas dinamicas.
+_Reconocimos que la creacion de arrays de objetos en mongo ejecuta la creacion de objects ID para cada objeto de nuestro array sin necesidad de indicarle nada a mongo.
+_Encontramos deficiencias en nuestra BD al momento de hacer el CRUD de varias de nuestras tablas por lo que esto nos ayudo a realizar una mejor estructuracion de las mismas.

@@ -23,26 +23,31 @@ module.exports = {
 	},
 	create: (req,res)=>{
 		var item = {
-			nombre: req.query.nombre,
-			descripcion: req.query.descripcion,
-			precio: req.query.precio
+			nombre: req.body.nombre,
+			descripcion: req.body.descripcion,
+			precio: req.body.precio
 		};
 		var nuevo = new prod_model(item).save();
-		res.send(nuevo);
+		res.redirect('/producto');
 	},
 	update: (req,res)=>{
-		prod_model.findOne({_id: req.query._id},(err,producto)=>{
-			producto.nombre = req.query.nombre;
-			producto.descripcion = req.query.descripcion;
-			producto.precio = req.query.precio;
+		prod_model.findOne({_id: req.body._id},(err,producto)=>{
+			producto.nombre = req.body.nombre;
+			producto.descripcion = req.body.descripcion;
+			producto.precio = req.body.precio;
 			producto.save();
-			res.send(producto);
+			res.redirect('/producto');
+		});
+	},
+	editar: (req,res)=>{
+		prod_model.findOne({_id: req.body._id},(err,producto)=>{
+			res.render('editarProducto',{data: producto});
 		});
 	},
 	delete: (req,res)=>{
-		prod_model.findOne({_id: req.query._id},(err,producto)=>{
+		prod_model.findOne({_id: req.body._id},(err,producto)=>{
 			producto.remove();
-			res.send({status:true});
+			res.redirect('/producto');
 		});
 	},
 };

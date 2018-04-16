@@ -1,0 +1,54 @@
+html
+	head
+		meta(name='viewport', content='width=device-width, initial-scale=1')
+		title Sistema
+		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
+	body
+		block content
+			.main.container
+				.row
+					.col-md-6.col-md-offset-3
+						h1.display-4.m-b-2 Editar Usuario
+						form(method='POST' action='/edit')
+							input(type="hidden" name="_id" value=data._id)
+							div.form-group
+								label(for='nombres') Nombres:
+								input#nombre.form-control(type='text' name='nombres' value=data.nombres)
+							div.form-group
+								label(for='apellidos') Apellidos:
+								input#descripcion.form-control(type='text' name='apellidos' value=data.apellidos)
+							div.form-group
+								label(for='telefono') Telefono:
+								input#precio.form-control(type='text' name='telefono' value=data.telefono)
+							div.form-group
+								label(for='celular') Celular:
+								input#precio.form-control(type='text' name='celular' value=data.celular)
+							div.form-group
+								label(for='ciudad') Ciudad:
+								input#precio.form-control(type='text' name='ciudad' value=data.ciudad)
+							div.form-group
+								label(for='contrasenia') Contraseña:
+								input#precio.form-control(type='text' name='contrasenia' value=data.contrasenia)
+							div.form-group
+								label(for='direccion') Direccion:
+								input#precio.form-control(type='text' name='direccion' value=data.direccion)
+							div.form-group
+								label(for='email') Email:
+								input#precio.form-control(type='text' name='email' value=data.email)
+							h2.display-4.m-b-2 Datos de la Tarjeta
+							
+							div.form-group
+								label(for='nro') Numero de Tarjeta:
+								input#precio.form-control(type='text' name='nro' value=data.tarjeta[0].nro)
+							div.form-group
+								label(for='fec_exp') Fecha de Expiracion: 
+								input#precio.form-control(type='text' name='fec_exp' value=data.tarjeta[0].fec_exp)
+							div.form-group
+								label(for='cod_seg') Codigo de Seguridad:
+								input#precio.form-control(type='text' name='cod_seg' value=data.tarjeta[0].cod_seg)
+							div.form-group
+								label(for='clave') Clave:
+								input#precio.form-control(type='text' name='clave' value=data.tarjeta[0].clave)
+							button.btn.btn-primary(type='submit') Grabar
+							button.btn.btn-basic
+								a(href="/") Regresar

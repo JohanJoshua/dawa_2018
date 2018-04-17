@@ -1,0 +1,18 @@
+Respuestas
+
+1.7.(ver imagen 01)
+
+2.5.(ver imagen 02)
+
+2.7.(ver imagen 03)
+
+2.13(ver imagen 04)
+
+2.14(ver imagen 05)
+
+3.4.(ver imagen 06)
+
+3.5. En esta parte lo que sucede es que el programa detecta que un usuario se ha conectado por lo que automaticamente lista una vista de la BD para este usuario pero asimismo tambien le manda esta vista a todos los usuarios que esten conectados en este momento por lo que el usuario que este conectado recibira una nueva lista de la BD.
+
+3.7.(ver imagen 07)
+Conclusiones

@@ -15,4 +15,12 @@ Respuestas
 3.5. En esta parte lo que sucede es que el programa detecta que un usuario se ha conectado por lo que automaticamente lista una vista de la BD para este usuario pero asimismo tambien le manda esta vista a todos los usuarios que esten conectados en este momento por lo que el usuario que este conectado recibira una nueva lista de la BD.
 
 3.7.(ver imagen 07)
+
 Conclusiones
+
+Utilizamos sacket.io para ejecutar acciones en tiempo real verificando que los cambios le llegaran a todos los usuarios que esten activos en ese momento.
+Aprendimos muchas funciones en Jquery con las cuales manejamos el DOM de una manera mas sencilla que trabajando con javascript neto.
+Diferenciamos el uso de io.emit que sirve para mandar una señal a todos los usuarios activos en ese momento y socket.emit el cual manda la señal solo a ese usuario que se ha logeado en ese momento.
+Reconocimos la diferencia de usar ArrowFunction y funciones normales ya que las Arrow funcion al utilizar el parámetro this capturar el valor del escope externo inmediato y las funciones normales capturan el escope de this como el objeto global.
+Aprendimos a ejecutar funciones entendiendo la distribucion de padres e hijos dentro de html para utilizar la funcion closest la cual nos ayudo con el efecto blink el cual hacia tintinear la columna modificada o creada.
+Aprendimos que cuando se ejecuta una función setInterval esta crea automáticamente un ID que puede ser guardado dentro de una variable para posteriormente ejecutar clearInterval la cual es una función que detiene el setInterval.

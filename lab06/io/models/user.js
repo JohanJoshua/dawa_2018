@@ -9,7 +9,8 @@ var user_schema = new Schema({
 	last_name: String,
 	timezone: String,
 	locale: String,
-	profile_pic: String
+	profile_pic: String,
+	question: Boolean,
 });
 user_model = mongoose.model('user',user_schema,'user');
 
@@ -21,7 +22,8 @@ module.exports = {
 			last_name: data.last_name,
 			timezone: data.timezone,
 			locale: data.locale,
-			profile_pic: data.profile_pic
+			profile_pic: data.profile_pic,
+			question: data.question
 		};
 		var nuevo = new user_model(item).save();
 		callback(item);
@@ -42,6 +44,7 @@ module.exports = {
 			item.timezone = data.timezone;
 			item.locale = data.locale;
 			item.profile_pic = data.profile_pic;
+			item.question = data.question;
 			item.save();
 			callback(item);
 		});

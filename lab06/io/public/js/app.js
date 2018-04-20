@@ -1,10 +1,37 @@
 $(document).ready(()=>{
 	var socket = io();
+	var intervalID;
 	socket.on('listar',(data)=>{
 		data = JSON.parse(data);
 		for (var i = 0,j=data.length;i<j; i++) {
 			fill(data[i]);
 		}
+	});
+	socket.on('edit_message',function(data){
+		if (data.type=="editado") {
+			alert("La fila numero "+data._id+" ha sido actualizada");
+		}
+		function blink_text() {
+		    $('#'+data._id).fadeOut(250);
+		    $('#'+data._id).fadeIn(250);
+		}
+		intervalID = setInterval(blink_text, 500);
+		$('#'+data._id).closest('tr').click(function(){
+			clearInterval(intervalID);	
+		});
+	});
+	socket.on('create_message',function(data){
+		if (data.type=="creado") {
+			alert("La fila numero "+data._id+" ha sido creada");
+		}
+		function blink_text() {
+		    $('#'+data._id).fadeOut(250);
+		    $('#'+data._id).fadeIn(250);
+		}
+		intervalID = setInterval(blink_text, 500);
+		$('#'+data._id).closest('tr').click(function(){
+			clearInterval(intervalID);	
+		});
 	});
 	socket.on('nuevo',(data)=>{
 		fill(data);
@@ -21,6 +48,11 @@ $(document).ready(()=>{
 		$row.append('<td>'+data.timezone+'</td>');
 		$row.append('<td>'+data.locale+'</td>');
 		$row.append('<td>'+data.profile_pic+'</td>');
+		if (data.question === false) {
+		$row.append('<td>No</td>');	
+		}else{
+		$row.append('<td>Si</td>');
+		}
 		$row.append('<td><button class="btn btn-success btn-sm" name="btnAct">Actualizar</button></td>');
 		$row.append('<td><button class="btn btn-danger btn-sm" name="btnEli">Eliminar</button></td>');
 		$row.data('data',data);
@@ -32,6 +64,7 @@ $(document).ready(()=>{
 			$('#timezone').val(data.timezone);
 			$('#locale').val(data.locale);
 			$('#profile_pic').val(data.profile_pic);
+			$('#question').val(data.question);
 			$('.warning').removeClass('warning');
 			$(this).closest('tr').addClass('warning');
 		});
@@ -49,6 +82,12 @@ $(document).ready(()=>{
 		$row.find('td:eq(3)').html(data.timezone);
 		$row.find('td:eq(4)').html(data.locale);
 		$row.find('td:eq(5)').html(data.profile_pic);
+		if (data.question === false) {
+			$row.find('td:eq(6)').html('No');	
+		}else{
+			$row.find('td:eq(6)').html('Si');
+		}
+		
 	}
 	};
 	$('#formulario').submit((e)=>{
@@ -59,7 +98,8 @@ $(document).ready(()=>{
 			last_name: $('#last_name').val(),
 			timezone: $('#timezone').val(),
 			locale: $('#locale').val(),
-			profile_pic: $('#profile_pic').val()
+			profile_pic: $('#profile_pic').val(),
+			question: $('#question').val()
 		};
 		if(data._id==''){
 			$('#_id').focus();

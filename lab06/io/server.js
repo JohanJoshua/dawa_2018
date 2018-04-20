@@ -10,15 +10,23 @@ io.on('connection',(socket)=>{
 	user.show((data)=>{
 		socket.emit('listar',data);
 	});
+	//evento de edicion
 	socket.on('actualizar',(data)=>{
 		console.log(data);
 		user.update(data,(rpta)=>{
 			io.emit('nuevo',rpta);
+			io.emit('edit_message',{
+				_id:rpta._id,
+				type:'editado'});
 		});
 	});
+	//evento de creacion
 	socket.on('crear',(data)=>{
 		user.create(data,(rpta)=>{
 			io.emit('nuevo',rpta);
+			io.emit('create_message',{
+				_id:rpta._id,
+				type:'creado'});
 		});
 	});
 	socket.on('eliminar',(data)=>{

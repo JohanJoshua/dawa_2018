@@ -1,0 +1,40 @@
+.Calculadora {
+	border-radius: 5%;
+	border: 1px solid #000;
+	box-shadow: 1px 1px 1px black;
+	width: 50%;
+	text-align:center;
+	background-color: #ffabab;
+	margin: auto;
+}
+.titulo {
+	font-size: 30px;
+	font-style: italic;
+}
+.Calculadora p{
+	font-size: 20px;
+	font-style: italic;
+}
+.input {
+	width:80%;
+	padding: 5px;
+}
+.button {
+	font-size: 20px;
+	font-style: solid;
+	padding: 10px;
+	color: white;
+	border-radius: 5%;
+	border:none;
+	background-color: green;
+}
+
+.button:hover {
+	background-color: black;
+	transition: 0.7s;
+}
+@media (max-width: 350px) {
+    .Calculadora {
+        width: 50%;
+    }
+}

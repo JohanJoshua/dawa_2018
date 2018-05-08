@@ -1,0 +1,6 @@
+Conclusiones
+_Aprendimos a utilizar react haciendo uso de los comandos basicos para su instalacion asi como tambien ejectamos los scripts dentro de nuestro proyecto para configurar los modulos CSS.
+_Creamos un ejemplo basico pasando paramentros a traves de etiquetas JSX con las cuales manejamos componentes con distintas caracteristicas dependiendo del valor de algunos atributos.
+_Utilizamos nuestros conocimientos en React para agregar un componente calculadora el cual ejecutara operaciones basicas dependiendo de que opcion elijamos en la interfaz grafica.
+_Descubrimos que al momento de efectuar un cambio utilizando eventos si este llama a un estado dentro de la propia funcion esta no se actualizara lo suficientemente rapido como para hacer calculos es por eso que se opto por separar las acciones con un boton y un evento onClick.
+_Utilizamos modulos css para manejar los estilos dentro de nuestra pagina aplicando responsividad a estas medidas para que se vea bien en diferentes tamaños posibles.

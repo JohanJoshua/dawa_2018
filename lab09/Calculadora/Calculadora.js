@@ -3,9 +3,9 @@ import classes from './Calculadora.css';
 
 export default class Calculadora extends Component {
 	state={
-		number1: null,
-		number2: null,
-		result: null,
+		number1: 0,
+		number2: 0,
+		result: 0,
 		operacion: "",
 		sign: "",
 		done: false,
@@ -32,7 +32,7 @@ export default class Calculadora extends Component {
 			switch (this.state.operacion) {
 			case "Suma": 
 				this.setState({
-					result: this.state.number1 + this.state.number2,
+					result: parseFloat(this.state.number1)+parseFloat(this.state.number2),
 					sign: "+",
 				});
 				break;

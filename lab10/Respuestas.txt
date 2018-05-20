@@ -1,0 +1,6 @@
+Conclusiones:
+Aprendimos a enrutar una pagina simple haciendo uso del paquete react-router-dom utilizando sus componentes Router, NavLink, BrowserRouter y Redirect.
+Entendimos el como funciona el ciclo de vida de nuestra pagina en react utilizando el componentDidMount para ejecutar alguna accion despues de que la pagina se ha renderizado.
+Creamos rutas dentro de nuestro proyecto para renderizar las diferentes paginas que hemos creado utilizando todos los componentes previamente creados.
+Utilizamos un json libre de typicode para probar peticiones posts sin necesidad de crear una base de datos previa, de este modo podemos probar si nuestra pagina esta funcionando correctamente.
+Agregamos estilos al laboratorio para que este se vea mas agradable a la vista de los usuarios utilizando modulos habiendo ejectado los scripts previamente.  

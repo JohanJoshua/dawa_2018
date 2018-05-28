@@ -4,35 +4,4 @@ html
 		title Sistema
 		link(rel='stylesheet', href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css')
 	body
-		block content
-			.main.container
-				.row
-					.col-md-6.col-md-offset-3
-						table.table.table-dark(border=1)
-							thead.thead-dark
-								tr
-									th(colspan=4)
-										h1.display-4.m-b-2 CRUD de Usuarios 
-										a(href="/create") Crear Usuario
-								tr
-									th ID
-									th Nombres
-									th Celular
-									th Email
-									th Contraseña
-									th Acciones
-							tbody
-								for item in data
-									tr
-										td= item._id
-										td= (item.nombres+" "+item.apellidos)
-										td= item.celular
-										td= item.email
-										td= item.contrasenia
-										td
-											form(method='POST' action='/editView')
-												input(type='hidden' name='_id' value=item._id)
-												input(type='submit' value='Editar') 
-											form(method='POST' action='/delete')
-												input(type='hidden' name='_id' value=item._id)
-												input(type='submit' value='Borrar')
+		div Hola Mundo

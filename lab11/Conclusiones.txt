@@ -1,0 +1,6 @@
+Conclusiones
+_Aprendimos a utilizar electron para crear una pagina web como un programa de escritorio añadiendo las vistas necesarias y las funcionalidades al menu de electron.
+_Ejecutamos el comando npm run dist el cual crea un instalador basico en el cual no nos pide una confirmacion de si queremos instalar dicho programa o no.
+_Revisamos diferentes casos de uso en git mediante el laboratorio brindado pudimos ver muchos errores usuales al momento de programar en grupo lo cual siempre suele traer algunos problemas si esque no sabes lo que esta pasando dentro de git.
+_Utilizamos un zip brindado por el docente para modificarlo añadiendo funcionalidades de axios para poder obtener anuncios de un servidor y tambien utilizamos metodos post para seleccionar un anuncio y mostrar todos sus datos en la misma pantalla asimismo se añadio un spiner para que la carga de data lusca mas presentable.
+_Utilizamos el comando npm run build para generar una carpeta build la cual contenia un mini version de nuestro proyecto donde podemos ejecutar todas las funcionalidades configuradas anteriormente pero esta ves bastante minficado para poder subirlo a cualquier servidor instantaneamente.

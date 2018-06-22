@@ -1,0 +1,7 @@
+Conclusiones:
+
+_Aprendimos la diferencia que existe entre usar las funciones que normalmente usamos y las nuevas arrow functions empleadas en react.
+_Clonamos un proyecto desde el repositorio del docente para poder percibir todas las caracteristicas basicas que presenta un proyecto hecho con React.
+_Reconocimos las diferencias que presentan el uso de componentes y contenedores asi como el uso de estados para manejar cambios que se pueden efectuar en base a eventos.
+_Creamos funciones que manejaron los eventos que sucedian en nuestros componentes para de este modo poder mandar un atributo onClick por ejemplo a nuestro componente y que este lo pueda ejecutar en su renderizacion.
+_Utilizamos el formato this para llamar a los atributos de nuestros estados y nuestras funciones asi como tambien utilizamos props para referirnos a la data enviada desde nuestros conenedores hacia nuestros componentes.
